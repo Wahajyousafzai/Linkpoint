@@ -1,5 +1,5 @@
 ## Overview
-Nexus Chat is a modern, real-time web chat application built with Next.js, offering seamless communication with a sleek, responsive design.
+LinkPoint is a modern, real-time web chat application built with Next.js, offering seamless communication with a sleek, responsive design.
 
 ## 🌟 Features
 - Real-time messaging using Socket.IO
