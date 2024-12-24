@@ -3,10 +3,8 @@ import next from "next";
 import { Server } from "socket.io";
 
 const dev = process.env.NODE_ENV !== "production";
-const hostname = process.env.HOSTNAME || "localhost";
-const port = parseInt(process.env.PORT || "3000", 10)
 
-const app = next({ dev, hostname, port});
+const app = next({ dev });
 const handle = app.getRequestHandler()
 app.prepare().then(() => {
     const httpServer = createServer(handle)
@@ -31,7 +29,6 @@ app.prepare().then(() => {
     })
         
     httpServer.listen(port,() => {
-        console.log(`Server running on http://${hostname}:${port}`);
         
     })
 })
