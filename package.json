@@ -3,13 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "dev:socket": "set NODE_OPTIONS=--loader ts-node/esm --trace-warnings --no-warnings && ts-node server.mts",
-    "build:socket": "next build && tsc --project tsconfig.server.json",
-    "start:socket": "set NODE_ENV=production && node dist/server.mjs"
+    "dev": "set NODE_OPTIONS=--loader ts-node/esm --trace-warnings --no-warnings && ts-node server.mts",
+    "build": "next build && tsc --project tsconfig.server.json",
+    "start": "set NODE_ENV=production && node dist/server.mjs",
+    "lint": "next lint"
   },
   "dependencies": {
     "@radix-ui/react-label": "^2.1.1",
